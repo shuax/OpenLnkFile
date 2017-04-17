@@ -43,7 +43,7 @@ def GetShortPath(path):
     return target
 
 class OpenLnkFile(sublime_plugin.EventListener):
-    def on_load2(self, view):
+    def on_load(self, view):
         window = view.window()
         path = view.file_name()
         ext = os.path.splitext(path)[1]
